@@ -16,14 +16,14 @@ func subtract(x, y int) int {
 }
 
 // 4 - A function can return any number of results
-func multipleReturnArguments(x, y int) (int, int) {
+func subtractWithMultipleReturnArguments(x, y int) (int, int) {
     return subtract(x, y), subtract(y, x)
 }
 
 // 5 - The return values may be named.
 // 6 - A return statement without arguments returns the named return values.
 //     This is known as a "naked" return.
-func withoutReturnArguments(a, b int) (x, y int) {
+func subtractWithoutReturnArguments(a, b int) (x, y int) {
     x = subtract(a, b)
     y = subtract(b, a)
 
